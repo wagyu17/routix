@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="icon.png">
+<title>Routix プライバシーポリシー</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
+<style>
+  :root {
+    --ground: #f6f5ef; --paper: #fdfcf7; --ink: #26302b; --muted: #5f6a63; --line: #e2e0d6;
+    --brand: #296452; --brand-soft: #dcebe2; --accent: #b86a2c;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #141a17; --paper: #1b2320; --ink: #e8ece8; --muted: #a3ada6; --line: #2e3833;
+      --brand: #8cc7ad; --brand-soft: #22352d; --accent: #eaa36b; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #141a17; --paper: #1b2320; --ink: #e8ece8; --muted: #a3ada6; --line: #2e3833;
+    --brand: #8cc7ad; --brand-soft: #22352d; --accent: #eaa36b; color-scheme: dark;
+  }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font: 16px/1.85 "Zen Kaku Gothic New", "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 48px 20px 72px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  .mark { width: 56px; height: 56px; flex: none; }
+  .app { font-weight: 700; font-size: 1.1rem; color: var(--brand); letter-spacing: .02em; }
+  h1 { font-size: clamp(1.6rem, 5vw, 2.1rem); line-height: 1.35; margin: 20px 0 6px; text-wrap: balance; }
+  .date { color: var(--muted); font-size: .9rem; margin: 0 0 28px; font-variant-numeric: tabular-nums; }
+  .summary { background: var(--brand-soft); border-radius: 14px; padding: 18px 20px; margin: 0 0 36px; }
+  .summary p { margin: 0; }
+  h2 { font-size: 1.15rem; margin: 40px 0 8px; padding-top: 22px; border-top: 1px solid var(--line); }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  p, li { max-width: 65ch; }
+  ul { padding-left: 1.3em; margin: 8px 0; }
+  li { margin: 4px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  .table { overflow-x: auto; margin: 12px 0; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 700; white-space: nowrap; }
+  @media (max-width: 560px) {
+    thead { display: none; }
+    table, tbody, tr, td { display: block; }
+    tr { padding: 12px 0; border-bottom: 1px solid var(--line); }
+    td { border: 0; padding: 2px 0; }
+    td::before { content: attr(data-label); display: block; color: var(--muted); font-size: .8rem; font-weight: 700; }
+    td:first-child { font-weight: 700; }
+    td:first-child::before { content: none; }
+  }
+  a { color: var(--brand); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+  .contact { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p><a href="./">← Routix</a></p>
+  <header>
+    <svg class="mark" viewBox="0 0 108 108" aria-hidden="true">
+      <rect width="108" height="108" rx="24" fill="#296452"/>
+      <g transform="translate(54 54) scale(1.45) translate(-54 -54)">
+        <path d="M54,33A21,21 0 1,1 54,75A21,21 0 1,1 54,33" fill="none" stroke="#3f7a67" stroke-width="7.5"/>
+        <path d="M56.92,74.80A21,21 0 0,1 39.95,38.39" fill="none" stroke="#cfe6d8" stroke-width="7.5"/>
+        <path d="M42.26,36.59A21,21 0 0,1 68.05,38.39" fill="none" stroke="#ee9b59" stroke-width="7.5"/>
+        <path d="M44.5,54.5L51,61L64.5,46.5" fill="none" stroke="#fff" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </svg>
+    <span class="app">Routix</span>
+  </header>
+
+  <h1>プライバシーポリシー</h1>
+  <p class="date">制定日：2026年9月22日</p>
+
+  <div class="summary">
+    <p>Routixは、アカウント登録なしで使えます。入力した内容はあなたの端末の中に保存され、開発者のサーバーへは送られません。Android版アプリはインターネット接続の権限を持っていません。</p>
+  </div>
+
+  <h2>対象</h2>
+  <p>このポリシーは、Android向けアプリ「Routix - ルーティン＆ポモドーロ」（以下「本アプリ」）と、Garminの時計向けアプリ「Routix」に適用されます。</p>
+
+  <h2>保存するデータ</h2>
+  <p>本アプリは、次のデータをあなたの端末の中だけに保存します。</p>
+  <ul>
+    <li>目標、To Do、定型タスク、カテゴリ</li>
+    <li>24時間スケジュールのパターンと、日時・場所のある予定（出発地・行き先・移動時間を含む）</li>
+    <li>ポモドーロや計測の記録、持ち物チェック、振り返りの文章</li>
+    <li>通知やポモドーロなどの設定</li>
+  </ul>
+  <p>これらを開発者が受け取ることはありません。本アプリのデータは端末のバックアップ機能の対象外としているため、Googleのバックアップにも含まれません。</p>
+
+  <h2>外部とのやりとり</h2>
+  <p>本アプリが端末の外にデータを渡すのは、次の場合だけです。いずれも、あなたが操作したときにだけ行われます。</p>
+  <div class="table">
+    <table>
+      <thead><tr><th>場面</th><th>渡すデータ</th><th>渡し先</th></tr></thead>
+      <tbody>
+        <tr>
+          <td data-label="場面">Garminの時計と同期するとき</td>
+          <td data-label="渡すデータ">今日のTo Do、24時間スケジュール、目標、持ち物チェック、ポモドーロの設定と記録</td>
+          <td data-label="渡し先">あなたの端末のGarmin Connectアプリを通じて、あなたの時計へBluetoothで送ります。Garmin Connectアプリでのデータの扱いは、Garminのプライバシーポリシーに従います。</td>
+        </tr>
+        <tr>
+          <td data-label="場面">予定の「Yahoo!乗換案内」「NAVITIME」ボタンを押したとき</td>
+          <td data-label="渡すデータ">出発地・行き先の名前と、到着または出発の日時</td>
+          <td data-label="渡し先">Yahoo!乗換案内またはNAVITIME。検索条件としてリンクに含め、そのサービスのアプリかWebページで開きます。</td>
+        </tr>
+        <tr>
+          <td data-label="場面">設定の「データ」から書き出したとき</td>
+          <td data-label="渡すデータ">本アプリのすべてのデータ（JSONファイル）</td>
+          <td data-label="渡し先">あなたが選んだ保存先（端末内やクラウドストレージなど）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>収集しないもの</h2>
+  <ul>
+    <li>氏名、メールアドレス、電話番号などの個人情報</li>
+    <li>位置情報（予定の場所は、あなたが入力した文字として保存するだけです）</li>
+    <li>広告ID、利用状況の分析データ、クラッシュレポート</li>
+  </ul>
+  <p>本アプリには広告と分析ツールが入っていません。</p>
+
+  <h2>使う権限</h2>
+  <ul>
+    <li><strong>通知</strong>：To Doの時刻、予定の開始と終了、ポモドーロの切り替わりを知らせるため</li>
+    <li><strong>正確なアラーム</strong>：通知を決めた時刻どおりに出すため（許可しなくても、おおよその時刻で通知します）</li>
+    <li><strong>起動時の実行</strong>：端末の再起動後も通知の予定を保つため</li>
+  </ul>
+
+  <h2>データの削除</h2>
+  <p>本アプリをアンインストールすると、端末内のデータはすべて削除されます。開発者はデータを持っていないため、削除の依頼は必要ありません。書き出したファイルは、保存先から削除してください。</p>
+
+  <h2>子どもの利用</h2>
+  <p>本アプリは子ども向けに作られたものではありません。子どもからの情報も、ほかの利用者と同様に収集しません。</p>
+
+  <h2>変更</h2>
+  <p>このポリシーを変更するときは、このページを更新し、制定日の下に改定日を記載します。データの扱いが大きく変わる場合は、アプリ内でもお知らせします。</p>
+
+  <h2 id="support">サポート・お問い合わせ</h2>
+  <div class="contact">
+    <p>不具合のご報告やご質問は、<a href="https://github.com/wagyu17/routix/issues">GitHubのIssues</a>にお寄せください。Google Playのアプリページに記載の連絡先からもお問い合わせいただけます。</p>
+    <p>ご報告の際は、目標やTo Doなどの個人的な内容を書き込まないようご注意ください。</p>
+  </div>
+</div>
+</body>
+</html>
