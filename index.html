@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="icon.png">
+<title>Routix</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
+<style>
+  :root {
+    --ground: #f6f5ef; --paper: #fdfcf7; --ink: #26302b; --muted: #5f6a63; --line: #e2e0d6;
+    --brand: #296452; --brand-soft: #dcebe2; --accent: #b86a2c;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #141a17; --paper: #1b2320; --ink: #e8ece8; --muted: #a3ada6; --line: #2e3833;
+      --brand: #8cc7ad; --brand-soft: #22352d; --accent: #eaa36b; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #141a17; --paper: #1b2320; --ink: #e8ece8; --muted: #a3ada6; --line: #2e3833;
+    --brand: #8cc7ad; --brand-soft: #22352d; --accent: #eaa36b; color-scheme: dark;
+  }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font: 16px/1.85 "Zen Kaku Gothic New", "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 48px 20px 72px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  .mark { width: 56px; height: 56px; flex: none; }
+  .app { font-weight: 700; font-size: 1.1rem; color: var(--brand); letter-spacing: .02em; }
+  h1 { font-size: clamp(1.6rem, 5vw, 2.1rem); line-height: 1.35; margin: 20px 0 6px; text-wrap: balance; }
+  .date { color: var(--muted); font-size: .9rem; margin: 0 0 28px; font-variant-numeric: tabular-nums; }
+  .summary { background: var(--brand-soft); border-radius: 14px; padding: 18px 20px; margin: 0 0 36px; }
+  .summary p { margin: 0; }
+  h2 { font-size: 1.15rem; margin: 40px 0 8px; padding-top: 22px; border-top: 1px solid var(--line); }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  p, li { max-width: 65ch; }
+  ul { padding-left: 1.3em; margin: 8px 0; }
+  li { margin: 4px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  .table { overflow-x: auto; margin: 12px 0; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 700; white-space: nowrap; }
+  @media (max-width: 560px) {
+    thead { display: none; }
+    table, tbody, tr, td { display: block; }
+    tr { padding: 12px 0; border-bottom: 1px solid var(--line); }
+    td { border: 0; padding: 2px 0; }
+    td::before { content: attr(data-label); display: block; color: var(--muted); font-size: .8rem; font-weight: 700; }
+    td:first-child { font-weight: 700; }
+    td:first-child::before { content: none; }
+  }
+  a { color: var(--brand); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+  .contact { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; }
+  .lead { font-size: 1.1rem; margin: 6px 0 28px; }
+  .links { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0; }
+  .links a { display: inline-block; padding: 10px 18px; border-radius: 999px; background: var(--brand-soft); text-decoration: none; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><img src="icon.png" width="56" height="56" alt="" style="border-radius:14px"><span class="app">Routix</span></header>
+  <h1>ルーティン＆ポモドーロ</h1>
+  <p class="lead">目標・24時間スケジュール・To Do・ポモドーロをひとつに。Garminの時計からも操作できるAndroidアプリです。</p>
+  <ul>
+    <li>開くたびに、長期・中期・短期の目標が目に入る</li>
+    <li>1日を24時間の円で組み立て、平日・休日などのパターンを使い分ける</li>
+    <li>時刻つきのTo Doと定型タスク、ポモドーロで集中した時間を記録</li>
+    <li>予定の前後に移動時間を確保し、乗換アプリをそのまま開ける</li>
+    <li>データは端末の中だけに保存。アカウント登録は不要</li>
+  </ul>
+  <div class="links">
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="https://github.com/wagyu17/routix/issues">サポート・お問い合わせ</a>
+  </div>
+  <p style="color:var(--muted);font-size:.9rem">Google Playで近日公開予定です。</p>
+</div>
+</body>
+</html>
