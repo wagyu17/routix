@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="icon.png">
+<title>TokiLoop サポート・お問い合わせ</title>
+<!-- The app links here (SUPPORT_URL in Host.kt): keep this file name and place. -->
+<style>
+  :root {
+    --ground: #ffffff; --paper: #f7f6f3; --ink: #37352f; --muted: #787774; --line: #e9e9e7;
+    --brand: #2383e2; --brand-soft: #eef5fc; --accent: #2383e2;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #191919; --paper: #202020; --ink: #d4d4d4; --muted: #9b9b9b; --line: #2e2e2e;
+      --brand: #529cca; --brand-soft: #1e2a33; --accent: #529cca; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #191919; --paper: #202020; --ink: #d4d4d4; --muted: #9b9b9b; --line: #2e2e2e;
+    --brand: #529cca; --brand-soft: #1e2a33; --accent: #529cca; color-scheme: dark;
+  }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font: 16px/1.85 "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+    overflow-wrap: break-word;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 48px 20px 72px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  .mark { width: 56px; height: 56px; flex: none; }
+  .app { font-weight: 700; font-size: 1.1rem; color: var(--brand); letter-spacing: .02em; }
+  h1 { font-size: clamp(1.6rem, 5vw, 2.1rem); line-height: 1.35; margin: 20px 0 6px; text-wrap: balance; }
+  .lead { margin: 0 0 28px; color: var(--muted); }
+  h2 { font-size: 1.15rem; margin: 40px 0 8px; padding-top: 22px; border-top: 1px solid var(--line); }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  h3 { font-size: 1rem; margin: 24px 0 4px; }
+  p, li { max-width: 65ch; }
+  ul { padding-left: 1.3em; margin: 8px 0; }
+  li { margin: 4px 0; }
+  a { color: var(--brand); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+  .contact { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; }
+  .contact p:first-child { margin-top: 0; }
+  .mail { font-size: 1.15rem; font-weight: 700; margin: 4px 0 12px; overflow-wrap: anywhere; }
+  .pro { background: var(--brand-soft); border-radius: 14px; padding: 18px 20px; margin: 12px 0; }
+  .pro p { margin: 0 0 8px; }
+  .pro p:last-child { margin-bottom: 0; }
+  .links { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; }
+  .links a { display: inline-block; padding: 10px 18px; border-radius: 999px; background: var(--brand-soft); text-decoration: none; font-weight: 700; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 700; width: 10.5em; }
+  @media (max-width: 560px) {
+    table, tbody, tr, th, td { display: block; width: auto; }
+    tr { padding: 10px 0; border-bottom: 1px solid var(--line); }
+    th, td { border: 0; padding: 2px 0; }
+    th { font-size: .85rem; }
+  }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+  footer p { margin: 2px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p><a href="./">← TokiLoop</a></p>
+  <header>
+    <img class="mark" src="icon.png" width="56" height="56" alt="" style="border-radius:14px">
+    <span class="app">TokiLoop</span>
+  </header>
+
+  <h1>サポート・お問い合わせ</h1>
+  <p class="lead">TokiLoop - 24時間ルーティン（iPhone、iOS 18.5以降）</p>
+
+  <h2 id="contact">お問い合わせ</h2>
+  <div class="contact">
+    <p>不具合のご報告やご質問は、メールでお寄せください。</p>
+    <p class="mail"><a href="mailto:tokiloopsupport@gmail.com">tokiloopsupport@gmail.com</a></p>
+    <p>いただいた順に返信します。</p>
+    <p>次のことを書いていただくと、早く調べられます。</p>
+    <ul>
+      <li>アプリのバージョン（アプリの 設定→このアプリについて に「バージョン 1.0.0 (4)」のように出ています）</li>
+      <li>iPhoneの機種とiOSのバージョン（iPhoneの 設定→一般→情報 で見られます）</li>
+      <li>何をしたときに、どうなったか</li>
+    </ul>
+    <p>予定・To Do・目標などの内容は書かないでください。いただいたメールの扱いは<a href="privacy.html">プライバシーポリシー</a>に書いています。</p>
+  </div>
+
+  <h2 id="pro">TokiLoop Pro</h2>
+  <div class="pro">
+    <p>無料版でも、記録や移動時間の逆算などの基本機能を使えます。無料版で登録できる数には、次の上限があります。</p>
+    <ul>
+      <li>1日の単発To Do：5個まで（予定と移動のTo Doは数えません）</li>
+      <li>定型ルーティン：8個まで</li>
+      <li>24時間スケジュールのパターン：2つまで</li>
+    </ul>
+    <p>TokiLoop Pro（月額）は300円/月で、この上限がなくなります。1か月ごとに自動で更新されます。</p>
+    <p>解約・購入の復元・返金は、Appleの仕組みで行います（下のよくある質問）。</p>
+  </div>
+
+  <h2 id="faq">よくある質問</h2>
+
+  <h3>通知が届かない</h3>
+  <ul>
+    <li>通知の許可：アプリの 設定→通知とリマインダー→通知の権限 が「許可済み」か確かめてください。「オフ」のときは「設定を開く」を押し、iPhoneの設定でTokiLoopの通知をオンにします。</li>
+    <li>おやすみ時間：アプリの 設定→通知とリマインダー→おやすみ時間 がオンなら、その時間は通知しません。iPhoneの集中モードがオンのときも、通知が出ないことがあります。</li>
+    <li>予約のしくみ：通知は数日先まで予約しておくので、アプリを閉じていても届きます。しばらく開かないと、その先の通知は届きません。ときどきアプリを開いてください。</li>
+  </ul>
+
+  <h3>機種変更のとき</h3>
+  <ul>
+    <li>iCloudバックアップ：iPhoneの設定でiCloudバックアップがオンなら、TokiLoopのデータもバックアップに含まれます。新しいiPhoneをそのバックアップから復元すると、データも戻ります。</li>
+    <li>書き出しと読み込み：古いiPhoneで、アプリの 設定→データとバックアップ→書き出す を押してファイルに保存します。新しいiPhoneで 読み込む を押し、そのファイルを選びます。読み込むと、新しいiPhoneにあったデータは置き換わります。</li>
+    <li>Proは、新しいiPhoneで同じApple Accountを使い、「購入を復元」を押すと戻ります。</li>
+  </ul>
+
+  <h3>解約したい</h3>
+  <p>iPhoneの設定→［名前］→サブスクリプション→TokiLoop から解約できます。アプリの 設定→このアプリについて→サブスクリプションを管理 からも開けます。更新日の24時間前までに解約すると、次の更新はされません。解約しても、期間の終わりまでProを使えます。その後は無料版に戻り、作ったデータはそのまま使えます。</p>
+
+  <h3>返金してほしい</h3>
+  <p>App Storeでの購入の返金は、Appleが受け付けます。<a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a> から申し込めます。返金するかどうかはAppleが決めます。</p>
+
+  <h3>購入を復元したい</h3>
+  <p>アプリの 設定→TokiLoop Pro で「Proにする」（Proのときは「Proの詳細・購入の復元」）を押し、「購入を復元」を押します。購入したときと同じApple Accountを使ってください。</p>
+
+  <h3>無料版の上限</h3>
+  <p>1日の単発To Doは5個、定型ルーティンは8個、24時間スケジュールのパターンは2つまでです。予定と移動のTo Doは数えません。上限に達すると、TokiLoop Proの案内が出ます。</p>
+
+  <h3 id="known-issues">わかっている不具合</h3>
+  <!-- These two lines wait for the CEO's wording approval (C-1). -->
+  <ul>
+    <li>書きかけはスクロールで消えることがあります</li>
+    <li>削除は取り消せません。ときどき書き出してください</li>
+  </ul>
+
+  <h2 id="links">規約とポリシー</h2>
+  <div class="links">
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="#tokushoho">特定商取引法に基づく表記</a>
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">利用規約（EULA）</a>
+    <a href="licenses.html">オープンソースライセンス</a>
+  </div>
+  <p>TokiLoop Proは、Appleの標準の利用規約（EULA）のもとで販売しています。</p>
+
+  <h2 id="tokushoho">特定商取引法に基づく表記</h2>
+  <!-- Rows mirror the purchase screen (ProUi.kt proPriceLine, purchaseTerms, cancelHelp). -->
+  <table>
+    <tbody>
+      <tr><th scope="row">販売事業者</th><td>ChronoCraft</td></tr>
+      <tr><th scope="row">運営統括責任者</th><td>請求があれば遅滞なく開示します。</td></tr>
+      <tr><th scope="row">所在地・電話番号</th><td>請求があれば遅滞なく開示します（特定商取引法第11条ただし書の規定に基づき省略しています）。</td></tr>
+      <tr><th scope="row">メールアドレス</th><td><a href="mailto:tokiloopsupport@gmail.com">tokiloopsupport@gmail.com</a></td></tr>
+      <tr><th scope="row">販売価格</th><td>TokiLoop Pro（月額）300円（税込）/月。App Storeの購入画面の表示が優先</td></tr>
+      <tr><th scope="row">商品代金以外の費用</th><td>通信料（ダウンロードや通信にかかる費用）</td></tr>
+      <tr><th scope="row">支払方法</th><td>App Store（Apple Account）</td></tr>
+      <tr><th scope="row">支払時期</th><td>購入時と、以後1か月ごとの更新時。お使いのApple Accountに請求されます。</td></tr>
+      <tr><th scope="row">提供時期</th><td>購入完了後すぐ。購入後すぐにProの機能を使えます。</td></tr>
+      <tr><th scope="row">自動更新・解約</th><td>更新日の24時間前までに解約しない限り、1か月ごとに自動で更新されます。解約は、iPhoneの設定→［名前］→サブスクリプション、またはアプリの「サブスクリプションを管理」から行えます。解約しても、期間の終わりまでProを使えます。作ったデータはそのまま使えます。</td></tr>
+      <tr><th scope="row">返品・返金</th><td>デジタルの商品のため、返品はできません。返金はAppleの手続き（<a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>）で申し込めます。</td></tr>
+      <tr><th scope="row">動作環境</th><td>iPhone、iOS 18.5以降</td></tr>
+    </tbody>
+  </table>
+
+  <footer>
+    <p>運営者：ChronoCraft</p>
+    <p>© 2026 ChronoCraft</p>
+  </footer>
+</div>
+</body>
+</html>
